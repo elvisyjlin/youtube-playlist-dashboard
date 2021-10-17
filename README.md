@@ -8,7 +8,7 @@ It is useful to browse the video statistics when you are not the owner of the vi
 
 For example, the following shows the playlist dashboard of "Top 50 This Week & Top 100 Songs 2021 (Best New Music Hits Playlist)".
 
-![Example](https://github.com/elvisyjlin/youtube-playlist-dashboard/blob/master/images/example.png)
+![Example](https://github.com/elvisyjlin/youtube-playlist-dashboard/blob/main/images/example.png)
 
 https://youtube-playlist-dashboard.herokuapp.com/dashboard/PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG
 
