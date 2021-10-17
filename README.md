@@ -2,13 +2,13 @@
 
 This is a dashboard that displays the information of videos in a Youtube playlist.
 
-It is useful to browse the video statistics when you are not the owner of the videos in the playlist. Just enter the playlist url or the playlist id, you will see the dashboard of the videos.
-
 Demo site: https://youtube-playlist-dashboard.herokuapp.com/
+
+It is useful to browse the video statistics when you are not the owner of the videos in the playlist. Just enter the playlist url or the playlist id, you will see the dashboard of the videos.
 
 For example, the following shows the playlist dashboard of "Top 50 This Week & Top 100 Songs 2021 (Best New Music Hits Playlist)".
 
-![Example](https://github.com/elvisyjlin/youtube-playlist-dashboard/blob/master/images/demo.png)
+![Example](https://github.com/elvisyjlin/youtube-playlist-dashboard/blob/master/images/example.png)
 
 https://youtube-playlist-dashboard.herokuapp.com/dashboard/PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG
 
