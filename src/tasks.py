@@ -50,7 +50,7 @@ def retrieve_data_from_playlist(playlist_id, save_as_files=True):
     total_view_count = 0
     total_comment_count = 0
     total_like_count = 0
-    total_dislike_count = 0
+    # total_dislike_count = 0
     for item in data["items"]:
         video_id = item["id"]
         title = normalize_title(item["snippet"]["title"])
@@ -59,7 +59,7 @@ def retrieve_data_from_playlist(playlist_id, save_as_files=True):
         channel_name = channel_data["items"][0]["snippet"]["title"]
         view_count = int(item["statistics"]["viewCount"])
         like_count = int(item["statistics"]["likeCount"])
-        dislike_count = int(item["statistics"]["dislikeCount"])
+        # dislike_count = int(item["statistics"]["dislikeCount"])
         comment_count = int(item["statistics"]["commentCount"])
         thumbnail_url = item["snippet"]["thumbnails"]["default"]["url"]
         date_publish = datetime.strptime(item["snippet"]["publishedAt"], "%Y-%m-%dT%H:%M:%SZ")
@@ -69,7 +69,7 @@ def retrieve_data_from_playlist(playlist_id, save_as_files=True):
         total_view_count += view_count
         total_comment_count += comment_count
         total_like_count += like_count
-        total_dislike_count += dislike_count
+        # total_dislike_count += dislike_count
 
         result["Id"].append(video_id)
         result["Title"].append(title)
@@ -80,15 +80,15 @@ def retrieve_data_from_playlist(playlist_id, save_as_files=True):
         result["Estimated Daily View Count"].append(view_count / seconds_since_publish * 24 * 60 * 60)
         result["Comment Count"].append(comment_count)
         result["Like Count"].append(like_count)
-        result["Dislike Count"].append(dislike_count)
-        result["Like Rate"].append(
-            like_count / (like_count + dislike_count) * 100
-        )
+        # result["Dislike Count"].append(dislike_count)
+        # result["Like Rate"].append(
+        #     like_count / (like_count + dislike_count) * 100
+        # )
         result["Thumbnail Url"].append(thumbnail_url)
 
     stats["playlist_title"] = playlist_title
     stats["total_view_count"] = total_view_count
     stats["total_comment_count"] = total_comment_count
     stats["total_like_count"] = total_like_count
-    stats["total_dislike_count"] = total_dislike_count
+    # stats["total_dislike_count"] = total_dislike_count
     return pd.DataFrame(result), stats

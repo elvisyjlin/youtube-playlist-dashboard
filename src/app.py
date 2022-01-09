@@ -28,7 +28,7 @@ def dashboard(playlist_id):
     # Normalize data
     df["Daily View Count"] = df["Daily View Count"].map("{:,.2f}".format)
     df["Estimated Daily View Count"] = df["Estimated Daily View Count"].map("{:,.2f}".format)
-    df["Like Rate"] = df["Like Rate"].map("{:,.2f}%".format)
+    # df["Like Rate"] = df["Like Rate"].map("{:,.2f}%".format)
     # Render web page
     return render_template(
         "dashboard.html",

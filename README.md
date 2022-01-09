@@ -42,3 +42,7 @@ You can host the service on [Heroku](https://www.heroku.com) easily with a few s
 2. Go to `Settings -> Config Vars -> Reveal Config Vars` and set the Youtube API key you created as `YOUTUBE_API_KEY`.
 3. Push the repository to your Heroku App with git.
 4. The deployment will be done automatically. Enjoy it!
+
+### Updates
+
+Youtube removed dislike count at the end of 2021. Therefore, dislike counts and like rates are removed from the playlist dashboard.

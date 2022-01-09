@@ -56,10 +56,10 @@
             <td scope="row">Total Like Count</td>
             <td>{{stats["total_like_count"]}}</td>
           </tr>
-          <tr>
+          <!-- <tr>
             <td scope="row">Total Dislike Count</td>
             <td>{{stats["total_dislike_count"]}}</td>
-          </tr>
+          </tr> -->
         </tbody>
       </table>
       <div style="display: flex; justify-content: space-between;">
@@ -83,8 +83,8 @@
             <th scope="col" data-field="est_daily_views" data-sortable="true" data-formatter="numberWithCommas">Est. Daily Views</th>
             <th scope="col" data-field="comments" data-sortable="true" data-formatter="numberWithCommas">Comments</th>
             <th scope="col" data-field="likes" data-sortable="true" data-formatter="numberWithCommas">Likes</th>
-            <th scope="col" data-field="dislikes" data-sortable="true" data-formatter="numberWithCommas">Dislikes</th>
-            <th scope="col" data-field="like_rate" data-sortable="true" data-sorter="rateSorter">Like Rate</th>
+            <!-- <th scope="col" data-field="dislikes" data-sortable="true" data-formatter="numberWithCommas">Dislikes</th> -->
+            <!-- <th scope="col" data-field="like_rate" data-sortable="true" data-sorter="rateSorter">Like Rate</th> -->
           </tr>
         </thead>
         <tbody>
@@ -106,8 +106,8 @@
               <td>{{row["Estimated Daily View Count"]}}</td>
               <td>{{row["Comment Count"]}}</td>
               <td>{{row["Like Count"]}}</td>
-              <td>{{row["Dislike Count"]}}</td>
-              <td>{{row["Like Rate"]}}</td>
+              <!-- <td>{{row["Dislike Count"]}}</td> -->
+              <!-- <td>{{row["Like Rate"]}}</td> -->
             </tr>
           {% endfor %}
         </tbody>
@@ -148,7 +148,7 @@
             $('#table').bootstrapTable('hideColumn', 'daily_views');
             $('#table').bootstrapTable('hideColumn', 'est_daily_views');
             $('#table').bootstrapTable('hideColumn', 'likes');
-            $('#table').bootstrapTable('hideColumn', 'dislikes');
+            // $('#table').bootstrapTable('hideColumn', 'dislikes');
           } else {
             $('#table').bootstrapTable('showColumn', 'title');
             $('#table').bootstrapTable('showColumn', 'channel');
@@ -156,7 +156,7 @@
             $('#table').bootstrapTable('showColumn', 'daily_views');
             $('#table').bootstrapTable('showColumn', 'est_daily_views');
             $('#table').bootstrapTable('showColumn', 'likes');
-            $('#table').bootstrapTable('showColumn', 'dislikes');
+            // $('#table').bootstrapTable('showColumn', 'dislikes');
           }
         });
 
